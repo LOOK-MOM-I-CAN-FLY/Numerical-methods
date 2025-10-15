@@ -1,4 +1,4 @@
-## Makefile для сборки и запуска проекта (main.cpp и main2.cpp)
+## Makefile для сборки и запуска проекта (horner and newtone .cpp)
 
 # Компилятор и флаги
 CXX := g++
@@ -22,11 +22,11 @@ $(BIN1): $(SRC1)
 $(BIN2): $(SRC2)
 	$(CXX) $(CXXFLAGS) $(SRC2) -o $(BIN2)
 
-# Запуск метода Горнера (main.cpp)
+# Запуск метода Горнера 
 run1: $(BIN1)
 	./$(BIN1)
 
-# Запуск метода Ньютона (main2.cpp)
+# Запуск метода Ньютона 
 run2: $(BIN2)
 	./$(BIN2)
 
